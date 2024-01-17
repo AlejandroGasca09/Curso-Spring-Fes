@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tabla de datos</title>
+</head>
+<body>
+<h1>Página dos</h1>
+<p> Inicio....
+    <span th:text="${saludo}"></span>
+</p>
+<span th:text="${fecha}"></span><br/>
+<img th:src="@{/imagen/aragon.png}"/><br/>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Correo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Alejandro</td>
+        <td>Gasca</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Simon</td>
+        <td>Paz</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Nelson</td>
+        <td>Guerra</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
